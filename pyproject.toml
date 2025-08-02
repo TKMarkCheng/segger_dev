@@ -10,7 +10,7 @@ authors = [
 keywords = ["segmentation", "deep learning", "pytorch", "geometric deep learning"]
 license = { text = "MIT" }
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10,<3.12"
 
 dependencies = [
     "click>=8.1.8",
@@ -26,7 +26,15 @@ dependencies = [
     "pqdm>=0.2.0",
     "scanpy>=1.10.4",
     "dask>=2025.3.0",
-    "rtree"
+    "rtree",
+    "torch==2.5.1", #cuda version specific
+    "torchvision==0.20.1", #cuda version specific
+    "lightning",
+    "torchmetrics",
+    "dask-geopandas",
+    "dask",
+    "distributed",
+    "ipykernel" # optional
 ]
 
 [project.optional-dependencies]

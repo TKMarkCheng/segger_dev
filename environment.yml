@@ -1,4 +1,4 @@
-name: segger
+name: segger_yml
 channels:
   - rapidsai
   - conda-forge
@@ -20,7 +20,7 @@ dependencies:
   - seaborn>=0.11.0
   - tqdm>=4.61.0
   - scanpy>=1.9.3
-  - squidpy==1.2.0
+  - squidpy>=1.2.0
   - adjusttext>=0.8
   - scikit-learn>=0.24.0
   - geopandas>=0.9.0
@@ -32,17 +32,17 @@ dependencies:
   - distributed>=2023.10.0
 
   # RAPIDS for CUDA 11
-  - cudf-cu11==24.8.*
-  - cuml-cu11==24.8.*
-  - cugraph-cu11==24.8.*
-  - cuspatial-cu11==24.8.*
+  - cudf>=24.08.*
+  - cuml>=24.08.*
+  - cugraph>=24.08.*
+  - cuspatial>=24.08.*
   - cupy-cuda11x
   - nccl==2.12.*
   - cutensor==1.3.*
 
   # Optional dependencies
-  - faiss-cpu>=1.7.0
-  - faiss-gpu>=1.7.0
+  # - faiss-cpu>=1.7.0
+  # - faiss-gpu>=1.7.0
 
   # Development dependencies
   - pytest
@@ -72,4 +72,4 @@ dependencies:
   - coverage
 
   # Multiprocessing support
-  - multiprocessing
+  # - multiprocessing
